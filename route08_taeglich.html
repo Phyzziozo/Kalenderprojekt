@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Januar — Tägliche Aufgaben</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* kleine Ergänzungen nur für Tage-Seite */
+    .tagAufgabe { display:flex; gap:10px; align-items:flex-start; padding:10px 0; border-bottom:1px dashed rgba(20,40,20,0.04); }
+    label { cursor:pointer; }
+    #fortschrittBar { width:100%; background:#e9f6ea; border-radius:10px; overflow:hidden; height:26px; margin-top:8px; }
+    #fortschrittFuellung { height:100%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:white; font-weight:600; display:flex; align-items:center; justify-content:center; }
+  </style>
+</head>
+<body class="daily-page" data-month="01">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <div>
+          <h1>Januar — Tägliche Ziele</h1>
+          <p class="tagline">Kleine Aufgaben für mehr Achtsamkeit</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a class="btn ghost" href="route01.html">Zurück zur Route</a>
+        <a class="btn" href="index.html">Zurück zur Übersicht</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 0;">
+    <section class="fortschritt">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <strong>Fortschritt:</strong> <span id="fortschrittText">0 von 30 erledigt</span>
+          <div id="fortschrittBar"><div id="fortschrittFuellung">0%</div></div>
+        </div>
+        <div style="text-align:right;">
+          <a class="btn ghost" href="#" id="reset-month">Reset diesen Monat</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tageAufgaben" style="margin-top:18px;">
+      <!-- JS generiert hier die Tagesaufgaben -->
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+  <script>
+    // optional: clear month (nur für testen)
+    document.getElementById('reset-month').addEventListener('click', (e) => {
+      e.preventDefault();
+      const month = document.body.dataset.month || 'XX';
+      if(!confirm('Lokalen Fortschritt für Monat ' + month + ' wirklich zurücksetzen?')) return;
+      const prefix = 'monat' + String(month).padStart(2,'0') + '_tag';
+      for(let i=1;i<=31;i++){
+        localStorage.removeItem(prefix + i);
+      }
+      location.reload();
+    });
+  </script>
+</body>
+</html>

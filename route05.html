@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Januar — Route</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-month="01"> <!-- wichtig für script -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <div>
+          <h1>Route Januar</h1>
+          <p class="tagline">Sanfte Hügel & Bachufer</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a class="btn ghost" href="index.html">Zurück zur Übersicht</a>
+        <a class="btn" href="route05_taeglich.html">Tägliche Ziele</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 0;">
+    <section class="route-hero" style="display:grid;grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+      <div>
+        <div class="image-slider" aria-hidden="false" style="position:relative; border-radius:12px; overflow:hidden;">
+          <img src="bilder/route01/1.jpg" alt="Route Bild 1" style="width:100%; display:block;">
+        </div>
+
+        <section style="margin-top:18px; background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent); padding:16px; border-radius:12px;">
+          <h2>Über die Route</h2>
+          <p>Eine familienfreundliche Strecke mit Bächen und Aussichtspunkten. Länge: 8 km · Schwierigkeit: leicht</p>
+        </section>
+      </div>
+
+      <aside style="position:relative;">
+        <div style="background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+          <h3>Schnellinfos</h3>
+          <ul style="padding-left:18px; margin:8px 0; color:var(--muted);">
+            <li>Distanz: 8 km</li>
+            <li>Dauer: ~2:30 h</li>
+            <li>Höhenmeter: 220 m</li>
+          </ul>
+          <div style="display:flex; gap:8px; margin-top:12px;">
+            <a class="btn" href="route01_taeglich.html">Tägliche Ziele</a>
+            <a class="btn ghost" href="index.html">Zurück</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:22px;">
+      <h3>Highlights</h3>
+      <p class="muted">Blumenwiesen im Frühling, ruhige Bachabschnitte, Picknickplätze mit Aussicht.</p>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
