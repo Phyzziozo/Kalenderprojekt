@@ -12,6 +12,7 @@
 
 * { box-sizing: border-box; }
 html,body { height:100%; }
+
 body{
   margin:0;
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -20,6 +21,12 @@ body{
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.45;
+}
+
+/* Medien dürfen nie überlaufen */
+img, video { 
+  max-width: 100%; 
+  height: auto; 
 }
 
 /* Layout container */
@@ -31,19 +38,40 @@ body{
 
 /* Header */
 .site-header { position:relative; }
+
 .header-inner{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:22px 0;
+  gap:14px;
+  flex-wrap:wrap;
 }
+
 .brand{ display:flex; gap:14px; align-items:center; }
 .logo{ width:44px; height:44px; color:var(--accent); }
-.brand h1{ margin:0; font-size:1.25rem; font-weight:700; }
-.tagline{ margin:2px 0 0; color:var(--muted); font-size:0.95rem; }
+
+.brand h1{ 
+  margin:0; 
+  font-size:1.25rem; 
+  font-weight:700; 
+}
+
+.tagline{ 
+  margin:2px 0 0; 
+  color:var(--muted); 
+  font-size:0.95rem; 
+}
 
 /* Nav */
-.header-nav { display:flex; gap:10px; align-items:center; }
+.header-nav { 
+  display:flex; 
+  gap:10px; 
+  align-items:center; 
+  flex-wrap:wrap;
+  justify-content:flex-start;
+}
+
 .btn{
   display:inline-block;
   background:var(--accent);
@@ -55,7 +83,12 @@ body{
   box-shadow: 0 6px 18px rgba(47,143,74,0.12);
   transition: transform .15s ease, box-shadow .15s;
 }
-.btn:hover{ transform: translateY(-3px); box-shadow: 0 12px 26px rgba(47,143,74,0.14); }
+
+.btn:hover{ 
+  transform: translateY(-3px); 
+  box-shadow: 0 12px 26px rgba(47,143,74,0.14); 
+}
+
 .btn.ghost{
   background:transparent;
   color:var(--accent);
@@ -67,14 +100,30 @@ body{
 .hero{
   margin-top:12px;
   padding:34px 0 48px;
-  background-image: radial-gradient(circle at 10% 20%, rgba(107,191,137,0.10), transparent 20%),
-                    linear-gradient(180deg, rgba(75,145,86,0.03), transparent 40%);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(107,191,137,0.10), transparent 20%),
+    linear-gradient(180deg, rgba(75,145,86,0.03), transparent 40%);
   border-radius:18px;
   overflow:hidden;
 }
-.hero-inner{ padding:18px 0; text-align:center; }
-.hero-inner h2{ margin:6px 0 8px; font-size:2rem; font-weight:700; color:#0f2a18; }
-.hero-inner p{ margin:0; color:var(--muted); font-size:1.03rem; }
+
+.hero-inner{ 
+  padding:18px 0; 
+  text-align:center; 
+}
+
+.hero-inner h2{ 
+  margin:6px 0 8px; 
+  font-size:2rem; 
+  font-weight:700; 
+  color:#0f2a18; 
+}
+
+.hero-inner p{ 
+  margin:0; 
+  color:var(--muted); 
+  font-size:1.03rem; 
+}
 
 /* Routen Grid */
 .routen-grid{
@@ -94,21 +143,92 @@ body{
   display:flex;
   flex-direction:column;
 }
-.route-card:hover{ transform: translateY(-8px); box-shadow: 0 25px 60px rgba(17,40,17,0.07); }
-.route-card img{ width:100%; height:150px; object-fit:cover; display:block; }
-.route-body{ padding:14px 16px 18px; display:flex; flex-direction:column; gap:8px; }
-.route-body h3{ margin:0; font-size:1.05rem; }
-.muted{ color:var(--muted); font-size:0.95rem; margin:0; }
-.card-actions{ margin-top:auto; display:flex; gap:8px; }
+
+.route-card:hover{ 
+  transform: translateY(-8px); 
+  box-shadow: 0 25px 60px rgba(17,40,17,0.07); 
+}
+
+.route-card img{ 
+  width:100%; 
+  height:150px; 
+  object-fit:cover; 
+  display:block; 
+}
+
+.route-body{ 
+  padding:14px 16px 18px; 
+  display:flex; 
+  flex-direction:column; 
+  gap:8px; 
+}
+
+.route-body h3{ 
+  margin:0; 
+  font-size:1.05rem; 
+}
+
+.muted{ 
+  color:var(--muted); 
+  font-size:0.95rem; 
+  margin:0; 
+}
+
+.card-actions{ 
+  margin-top:auto; 
+  display:flex; 
+  gap:8px; 
+}
 
 /* Footer */
-.site-footer{ margin-top:36px; padding:26px 0; background:transparent; color:var(--muted); text-align:center; border-top:1px solid rgba(20,40,20,0.03); }
+.site-footer{ 
+  margin-top:36px; 
+  padding:26px 0; 
+  background:transparent; 
+  color:var(--muted); 
+  text-align:center; 
+  border-top:1px solid rgba(20,40,20,0.03); 
+}
 
-/* Responsive */
+/* Route-Seiten: Sidebar unter Inhalt */
+@media (max-width: 900px){
+  .route-hero{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Handy */
 @media (max-width:720px){
   .hero-inner h2{ font-size:1.4rem; }
   .route-card img{ height:140px; }
+
+  .brand h1{ font-size:1.05rem; }
+  .tagline{ font-size:.9rem; }
+
+  .btn{
+    padding:10px 12px;
+    width:100%;
+    text-align:center;
+  }
+
+  .header-nav{ width:100%; }
+
+  .card-actions{
+    flex-direction:column;
+  }
 }
 
 /* Kleine Utility */
 .hidden{ display:none; }
+
+/* Impressum */
+header{
+  padding:18px 0;
+  width:92%;
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+.nav-buttons{
+  margin-top:10px;
+}
