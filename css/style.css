@@ -34,6 +34,7 @@ img, video {
   width: 92%;
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Header */

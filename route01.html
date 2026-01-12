@@ -7,11 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-month="01"> <!-- wichtig für script -->
+
+<body data-month="01">
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z"
+                fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
         <div>
           <h1>Route Januar</h1>
           <p class="tagline">Ein erster Schritt hinaus in die Weite.</p>
@@ -25,83 +30,87 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main class="container" style="padding:28px 0;">
-    <section class="route-hero" style="display:grid;grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+    <section class="route-hero" style="display:grid; grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+      <!-- Left column -->
       <div>
         <div class="image-slider" aria-hidden="false" style="position:relative; border-radius:12px; overflow:hidden;">
-          <img src="bilder/route01/1.jpg" alt="Route Bild 1" style="width:100%; display:block;">
+          <img src="bilder/route01/1-2.webp" alt="Route Bild 1" style="width:100%; display:block;">
         </div>
 
-        <section style="margin-top:18px; background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent); padding:16px; border-radius:12px;">
-          <h2>Über die Route</h2>
-          <p>Stadtnaher Aufstieg vom Marktplatz über Streuobstwiesen und Waldpfade zur Ruine Honberg und aufs Erzbergplateau; Rundweg möglich.</p>
+        <section style="margin-top:22px; background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+  <h3>Highlights</h3>
+  <p class="muted">Ruine Honberg, Panorama über Tuttlingen und das Donautal, ruhige Streuobstwiesen im Winter.</p>
+</section>
+
+          <section style="margin-top:22px; background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+          <h2>Historischer Hintergrund</h2>
+          <p class="muted">
+            Die Ruine Honberg war im Mittelalter eine bedeutende Festung der Grafen von Lupfen und später Württembergs.
+            Sie diente der Kontrolle wichtiger Handelswege im Donautal und wurde im Dreißigjährigen Krieg zerstört. </p>
         </section>
       </div>
-
+      <!-- Right column / Aside -->
       <aside style="position:relative;">
         <div style="background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
           <h3>Schnellinfos</h3>
           <ul style="padding-left:18px; margin:8px 0; color:var(--muted);">
-             <li>Schwierigkeit: leicht</li>
-            <li>Distanz: 5 - 6 km</li>
-            <li>Dauer: ~ 1 - 1,5 Std.</li>
-            <li>Höhenmeter: moderate Höhenmeter</li>
-            <li>Wintertauglich</li>
-           
+            <li><strong>Start:</strong> Marktplatz Tuttlingen (Innenstadt)</li>
+            <li><strong>Ziel:</strong> Ruine Honberg / Honberg-Plateau (Rundweg möglich)</li>
+            <li><strong>Anreise:</strong> Parkplätze in der Innenstadt Tuttlingen; Bahnhof / ZOB Tuttlingen fußläufig erreichbar; Aufstiegswege gut ausgeschildert.</li>
+            <li><strong>Schwierigkeit:</strong> leicht</li>
+            <li><strong>Distanz:</strong> 5–6 km</li>
+            <li><strong>Dauer:</strong> ca. 1–1,5 Std.</li>
+            <li><strong>Höhenmeter:</strong> moderate Höhenmeter</li>
           </ul>
-          <div style="display:flex; gap:8px; margin-top:12px;">
-            <a class="btn" href="route01_taeglich.html">Tägliche Ziele</a>
-            <a class="btn ghost" href="index.html">Zurück</a>
-          </div>
         </div>
       </aside>
     </section>
+   
+    
 
-    <section style="margin-top:22px;">
-      <h3>Highlights</h3>
-      <p class="muted">Ruine Honberg, Panorama über Tuttlingen und das Donautal, ruhige Streuobstwiesen im Winter.</p>
+    <section style="margin-top:26px; background:var(--card); padding:18px; border-radius:12px; box-shadow:var(--shadow);">
+      <h3>Übungen unterwegs</h3>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Aufgabe · Jahresintention</h4>
+        <p class="muted">
+          Wähle zu Beginn einen kleinen Stein. Formuliere einen Satz für das kommende Jahr
+          und lege den Stein an einem Ort ab, der sich stimmig anfühlt.
+        </p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Atemübung · Klarheit</h4>
+        <p class="muted">
+          Atme 4 Sekunden ein, halte den Atem 6 Sekunden und atme 8 Sekunden langsam aus.
+          Wiederhole dies 5 Mal.
+        </p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Schnee · Wahrnehmung</h4>
+        <p class="muted">
+          Suche drei verschiedene Schneestrukturen und betrachte ihre Formen und Unterschiede.
+        </p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Sonne · Ruhe</h4>
+        <p class="muted">
+          Stelle dich an einen sonnigen Ort, öffne die Arme leicht und nimm fünf ruhige Atemzüge.
+        </p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bonus · Gemeinsam</h4>
+        <p class="muted">
+          Wenn du nicht allein unterwegs bist: kurze, freundliche Schneeballschlacht oder gemeinsames Lachen.
+        </p>
+      </div>
     </section>
   </main>
-      <section style="margin-top:26px; background:var(--card); padding:18px; border-radius:12px; box-shadow:var(--shadow);">
-  <h3>Übungen unterwegs</h3>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Aufgabe · Jahresintention</h4>
-    <p class="muted">
-      Wähle zu Beginn einen kleinen Stein. Formuliere einen Satz für das kommende Jahr
-      und lege den Stein an einem Ort ab, der sich stimmig anfühlt.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Atemübung · Klarheit</h4>
-    <p class="muted">
-      Atme 4 Sekunden ein, halte den Atem 6 Sekunden und atme 8 Sekunden langsam aus.
-      Wiederhole dies 5 Mal.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Schnee · Wahrnehmung</h4>
-    <p class="muted">
-      Suche drei verschiedene Schneestrukturen und betrachte ihre Formen und Unterschiede.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Sonne · Ruhe</h4>
-    <p class="muted">
-      Stelle dich an einen sonnigen Ort, öffne die Arme leicht und nimm fünf ruhige Atemzüge.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bonus · Gemeinsam</h4>
-    <p class="muted">
-      Wenn du nicht allein unterwegs bist: kurze, freundliche Schneeballschlacht oder gemeinsames Lachen.
-    </p>
-  </div>
-</section>
 
   <script src="js/script.js" defer></script>
 </body>

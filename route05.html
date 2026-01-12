@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Januar — Route</title>
+  <title>Mai — Route</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-month="05"> <!-- wichtig für script -->
+
+<body data-month="05">
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z"
+                fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
         <div>
           <h1>Route Mai</h1>
           <p class="tagline">Alles wird grün und lädt zum Bleiben ein.</p>
@@ -26,94 +30,87 @@
   </header>
 
   <main class="container" style="padding:28px 0;">
-    <section class="route-hero" style="display:grid;grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+    <section class="route-hero" style="display:grid; grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+      
+      <!-- Links -->
       <div>
-        <div class="image-slider" aria-hidden="false" style="position:relative; border-radius:12px; overflow:hidden;">
-          <img src="bilder/route05/1.jpg" alt="Route Bild 1" style="width:100%; display:block;">
+        <div class="image-slider" style="position:relative; border-radius:12px; overflow:hidden;">
+          <img src="bilder/route05/1-2.webp" alt="Route Mai – Kloster Beuron und Lourdesgrotte" style="width:100%; display:block;">
         </div>
 
-        <section style="margin-top:18px; background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent); padding:16px; border-radius:12px;">
-          <h2>Über die Route</h2>
-          <p>Weg vom Kloster Beuron durch das Liebfrauental hinauf zum Rauhen Stein mit Aussicht und weiter zur Lourdesgrotte; spirituelle und naturnahe Elemente kombiniert.</p>
+        <!-- Historischer Hintergrund (NICHT transparent) -->
+        <section style="margin-top:18px; background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+          <h2>Historischer Hintergrund</h2>
+          <p class="muted">
+            Das Benediktinerkloster Beuron wurde im 11. Jahrhundert gegründet und prägte die Region über Jahrhunderte
+            als religiöses, kulturelles und wirtschaftliches Zentrum im oberen Donautal. Viele Wege rund um Beuron
+            stehen bis heute in Zusammenhang mit Kloster- und Pilgertraditionen.
+          </p>
         </section>
       </div>
 
+      <!-- Rechts -->
       <aside style="position:relative;">
-        <div style="background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+        <div style="background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
           <h3>Schnellinfos</h3>
           <ul style="padding-left:18px; margin:8px 0; color:var(--muted);">
-            <li>Schwierigkeit: leicht - mittel</li>
-            <li>Distanz: 6 - 10+ km</li>
-            <li>Dauer: 1,5 - 4 Std.</li>
-            
+            <li><strong>Start:</strong> Kloster Beuron / Klosterparkplatz</li>
+            <li><strong>Ziel:</strong> Lourdesgrotte (Rundweg oder Varianten möglich)</li>
+            <li><strong>Anreise:</strong> Parkplatz am Kloster Beuron; Bahn &amp; Bus nach Beuron vorhanden; Weg gut markiert (Wander- &amp; Pilgerzeichen).</li>
+            <li><strong>Schwierigkeit:</strong> leicht – mittel</li>
+            <li><strong>Distanz:</strong> 6–10+ km</li>
+            <li><strong>Dauer:</strong> ca. 1,5–4 Std.</li>
           </ul>
-          <div style="display:flex; gap:8px; margin-top:12px;">
-            <a class="btn" href="route01_taeglich.html">Tägliche Ziele</a>
-            <a class="btn ghost" href="index.html">Zurück</a>
-          </div>
         </div>
       </aside>
     </section>
 
-    <section style="margin-top:22px;">
+    <!-- Highlights -->
+    <section style="margin-top:22px; background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
       <h3>Highlights</h3>
-      <p class="muted">Kloster Beuron, Rauher Stein (Aussicht), Lourdesgrotte, Donautalblicke.
-</p>
+      <p class="muted">Kloster Beuron, Rauher Stein (Aussicht), Lourdesgrotte, Donautalblicke.</p>
+    </section>
+
+    <!-- Übungen -->
+    <section style="margin-top:26px; background:#ffffff; padding:18px; border-radius:12px; box-shadow:var(--shadow);">
+      <h3>Übungen unterwegs</h3>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Aufgabe · Mini-Pilgermoment</h4>
+        <p class="muted">An der Grotte drei Dinge denken, für die du dankbar bist.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Handwärme-Gesichtsberuhigung</h4>
+        <p class="muted">Hände erwärmen, drei tiefe Atemzüge.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Regen · Tropfenjuwelen finden</h4>
+        <p class="muted">Kleine Regentropfen auf Pflanzen oder Steinen wahrnehmen.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Hangaktivator</h4>
+        <p class="muted">Bewusst die Oberschenkel aktivieren.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Sonne · Frühlingsduft-Palette</h4>
+        <p class="muted">Drei Gerüche finden und verbinden.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Hüftöffner-Schritte</h4>
+        <p class="muted">Große Schritte zur Lockerung.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bonus · Wasser-Reflexion</h4>
+        <p class="muted">Kurze Selbstfrage am Wasser reflektieren.</p>
+      </div>
     </section>
   </main>
-<section style="margin-top:26px; background:var(--card); padding:18px; border-radius:12px; box-shadow:var(--shadow);">
-  <h3>Übungen unterwegs</h3>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Aufgabe · Mini-Pilgermoment</h4>
-    <p class="muted">
-      An der Grotte drei Dinge denken, für die du dankbar bist.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Handwärme-Gesichtsberuhigung</h4>
-    <p class="muted">
-      Hände erwärmen, 3 tiefe Atemzüge.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Regen · Tropfenjuwelen finden</h4>
-    <p class="muted">
-      Kleine Regentropfen auf Pflanzen oder Steinen wahrnehmen.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Hangaktivator</h4>
-    <p class="muted">
-      Bewusst Oberschenkel aktivieren.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Sonne · Frühlingsduft-Palette</h4>
-    <p class="muted">
-      3 Gerüche finden und verbinden.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Hüftöffner-Schritte</h4>
-    <p class="muted">
-      Große Schritte zur Lockerung.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bonus · Wasser-Reflexion</h4>
-    <p class="muted">
-      Kurze Selbstfrage am Wasser reflektieren.
-    </p>
-  </div>
-</section>
-
 
   <script src="js/script.js" defer></script>
 </body>

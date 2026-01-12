@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Januar — Route</title>
+  <title>April — Route</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-month="04"> <!-- wichtig für script -->
+
+<body data-month="04">
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 12c0 4 6 9 9 9s9-5 9-9S16 3 12 3 3 8 3 12z"
+                fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
         <div>
           <h1>Route April</h1>
           <p class="tagline">Der Weg steigt an und öffnet den Blick.</p>
@@ -25,94 +30,91 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main class="container" style="padding:28px 0;">
-    <section class="route-hero" style="display:grid;grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+    <section class="route-hero" style="display:grid; grid-template-columns: 1fr 360px; gap:22px; align-items:start;">
+      
+      <!-- Left column -->
       <div>
-        <div class="image-slider" aria-hidden="false" style="position:relative; border-radius:12px; overflow:hidden;">
-          <img src="bilder/route04/1.jpg" alt="Route Bild 1" style="width:100%; display:block;">
+        <div class="image-slider" style="position:relative; border-radius:12px; overflow:hidden;">
+          <img src="bilder/route04/1-2.webp" alt="Route April – Donaufelsengarten bei Gutenstein" style="width:100%; display:block;">
         </div>
 
-        <section style="margin-top:18px; background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent); padding:16px; border-radius:12px;">
-          <h2>Über die Route</h2>
-          <p>Premiumweg durch ein Felslabyrinth mit steilen, engen Pfaden und zahlreichen Aussichtspunkten über das Donautal; stellenweise exponiert.</p>
+        <!-- Historischer Hintergrund (NICHT transparent) -->
+        <section style="margin-top:18px; background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+          <h2>Historischer Hintergrund</h2>
+          <p class="muted">
+            Die Region um Gutenstein liegt im oberen Donautal, das über Jahrtausende als natürlicher Verkehrs- und
+            Siedlungsraum genutzt wurde. Die markanten Felsformationen boten in früheren Zeiten Orientierung, Schutz
+            und Ausblick über das Tal; zahlreiche Wege folgen alten Trassen, die Tal und Albhochfläche verbinden.
+          </p>
         </section>
       </div>
 
+      <!-- Right column / Aside -->
       <aside style="position:relative;">
-        <div style="background:var(--card); padding:16px; border-radius:12px; box-shadow:var(--shadow);">
+        <div style="background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
           <h3>Schnellinfos</h3>
           <ul style="padding-left:18px; margin:8px 0; color:var(--muted);">
-            <li>Schwierigkeit: mittel</li>
-            <li>Distanz: 8 - 9 km</li>
-            <li>Dauer: ~ 2,5 - 3,5 Std.</li>
-            <li>Höhenmeter: ca. 500 Hm</li>
-            <li>anspruchsvolle Passagen</li>
+            <li><strong>Start:</strong> Parkplatz „Hofstättle“ bei Gutenstein</li>
+            <li><strong>Ziel:</strong> Rundweg durch Felsformationen &amp; Aussichtspunkte</li>
+            <li><strong>Anreise:</strong> Parkplatz direkt am Einstieg; ÖPNV nur eingeschränkt (Anfahrt über Sigmaringen).</li>
+            <li><strong>Schwierigkeit:</strong> mittel</li>
+            <li><strong>Distanz:</strong> 8–9 km</li>
+            <li><strong>Dauer:</strong> ca. 2,5–3,5 Std.</li>
+            <li><strong>Höhenmeter:</strong> ca. 500 Hm</li>
+            <li><strong>Hinweis:</strong> anspruchsvolle Passagen</li>
           </ul>
-          <div style="display:flex; gap:8px; margin-top:12px;">
-            <a class="btn" href="route01_taeglich.html">Tägliche Ziele</a>
-            <a class="btn ghost" href="index.html">Zurück</a>
-          </div>
         </div>
       </aside>
     </section>
 
-    <section style="margin-top:22px;">
+    <!-- Highlights -->
+    <section style="margin-top:22px; background:#ffffff; padding:16px; border-radius:12px; box-shadow:var(--shadow);">
       <h3>Highlights</h3>
       <p class="muted">Rabenfelsen, Teufelsloch, Kreuzfelsen / Kreuzstein, spektakuläre Donautal-Panoramen.</p>
     </section>
+
+    <!-- Übungen -->
+    <section style="margin-top:26px; background:#ffffff; padding:18px; border-radius:12px; box-shadow:var(--shadow);">
+      <h3>Übungen unterwegs</h3>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Aufgabe · Felsoberflächen-Analyse</h4>
+        <p class="muted">Felsen berühren → Wahrnehmung notieren.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Ankeratmung</h4>
+        <p class="muted">10× Ein: „Ich bin hier.“ Aus: „Ich bin sicher.“</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Regen · Felswasser-Pfad</h4>
+        <p class="muted">Rinnsale suchen.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Schritt-Präzision</h4>
+        <p class="muted">Auf nassem Untergrund bewusst präzise treten.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Bei Sonne · Felsfarben-Suche</h4>
+        <p class="muted">Drei unerwartete Farbtöne finden.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Übung · Fels-Power-Pose</h4>
+        <p class="muted">45 Sekunden Stand mit Händen in die Hüfte.</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <h4 style="margin-bottom:4px;">Partner-Bonus · Echo-Challenge</h4>
+        <p class="muted">Längstes Echo suchen.</p>
+      </div>
+    </section>
   </main>
-<section style="margin-top:26px; background:var(--card); padding:18px; border-radius:12px; box-shadow:var(--shadow);">
-  <h3>Übungen unterwegs</h3>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Aufgabe · Felsoberflächen-Analyse</h4>
-    <p class="muted">
-      Felsen berühren → Wahrnehmung notieren.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Ankeratmung</h4>
-    <p class="muted">
-      10× Ein: „Ich bin hier.“ Aus: „Ich bin sicher.“
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Regen · Felswasser-Pfad</h4>
-    <p class="muted">
-      Rinnsale suchen.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Schritt-Präzision</h4>
-    <p class="muted">
-      Auf nassem Untergrund bewusst präzise treten.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Bei Sonne · Felsfarben-Suche</h4>
-    <p class="muted">
-      3 unerwartete Farbtöne finden.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Übung · Fels-Power-Pose</h4>
-    <p class="muted">
-      45 Sekunden Stand mit Händen in die Hüfte.
-    </p>
-  </div>
-
-  <div style="margin-top:12px;">
-    <h4 style="margin-bottom:4px;">Partner-Bonus · Echo-Challenge</h4>
-    <p class="muted">
-      Längstes Echo suchen.
-    </p>
-  </div>
-</section>
 
   <script src="js/script.js" defer></script>
 </body>
